@@ -24,6 +24,7 @@ function Recipe() {
   const verwijderObject = { opdracht: "verwijderen", bevestiging: "Verwijder" };
   const updateObject = { opdracht: "updaten", bevestiging: "Update" };
 
+  console.log(id);
   console.log(data);
   console.log(data?.[0]?.nameRecipe);
   console.log(recipe);
