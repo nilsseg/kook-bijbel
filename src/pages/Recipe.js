@@ -14,7 +14,7 @@ import ModalCheck from "../components/ModalCheck";
 import RecipeRating from "../components/RecipeRating";
 import "../styles/Recipe.css";
 
-function Recipe() {
+async function Recipe() {
   const { id } = useParams();
   // data ophalen van 1 document/recept met hook
   // const recipe = useDocument("recipe", id);
