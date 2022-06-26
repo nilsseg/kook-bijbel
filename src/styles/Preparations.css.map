@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AACE,kBADgB,CAChB,WAAW,CAAC;EACV,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,WAAW;CACpB;;AALH,AAME,kBANgB,CAMhB,uBAAuB,CAAC;EACtB,aAAa,EAAE,KAAK;CACrB;;AARH,AAUE,kBAVgB,CAUhB,aAAa,CAAC;EACZ,OAAO,EAAE,WAAW;CACrB",
+    "sources": [
+        "Preparations.scss",
+        "../variables/Variables.scss"
+    ],
+    "names": [],
+    "file": "Preparations.css"
+}

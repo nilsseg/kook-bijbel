@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,CAAC;EACV,UAAU,EAAE,2BAA2B;CASxC;;AAPE,AAAD,kBAAQ,CAAC;EACP,UAAU,EAAE,GAAG;CAChB;;AAEA,AAAD,0BAAgB,CAAC;EACf,MAAM,EAAE,WAAW;CACpB;;AAIH,AAAA,MAAM,CAAC,WAAW,CAAC;ECgCjB,KAAK,EA7BY,OAAO;CDDzB;;AAED,AAAA,KAAK,CAAC,WAAW,CAAC;ECgChB,gBAAgB,EAzCG,OAAO;EA0C1B,KAAK,EAlCY,OAAO;CDGzB",
+    "sources": [
+        "Recipe.scss",
+        "../variables/Variables.scss"
+    ],
+    "names": [],
+    "file": "Recipe.css"
+}

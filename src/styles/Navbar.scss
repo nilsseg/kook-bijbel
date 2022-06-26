@@ -1,0 +1,61 @@
+@import "../variables/Variables.scss";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.dropdown-item {
+  text-transform: none;
+}
+.navbar-icon {
+  position: relative;
+  top: -0.7em;
+  right: 2.2em;
+}
+
+.dropdown-logo {
+  height: 1.3em;
+}
+
+#light .dropdown-logo {
+  @include header-colors-light;
+}
+
+#dark .dropdown-logo {
+  @include header-colors-dark;
+}
+
+#light .nav-link {
+  @include header-colors-light;
+}
+
+#dark .nav-link {
+  @include header-colors-dark;
+}
+
+#light .navbar {
+  @include header-colors-light;
+}
+
+#dark .navbar {
+  @include header-colors-dark;
+}
+
+#light .navbar-item {
+  @include header-colors-light;
+}
+
+#dark .navbar-item {
+  @include header-colors-dark;
+}

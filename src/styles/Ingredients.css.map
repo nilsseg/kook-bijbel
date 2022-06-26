@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AACE,iBADe,CACf,WAAW,CAAC;EACV,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,WAAW;CACpB;;AALH,AAME,iBANe,CAMf,aAAa,CAAC;EACZ,OAAO,EAAE,WAAW;CACrB",
+    "sources": [
+        "Ingredients.scss",
+        "../variables/Variables.scss"
+    ],
+    "names": [],
+    "file": "Ingredients.css"
+}

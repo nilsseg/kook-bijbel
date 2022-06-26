@@ -1,0 +1,21 @@
+.card-login {
+  min-height: calc(100vh - (80px + 50px));
+}
+
+.card-login .card-btn {
+  margin-top: 0.4em;
+}
+
+.card-login .card-link-register {
+  margin-bottom: 0.4em;
+}
+
+#light .card-login {
+  color: #2d6a4f;
+}
+
+#dark .card-login {
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+}
+/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,21 @@
+.card-register {
+  min-height: calc(100vh - (80px + 50px));
+}
+
+.card-register .card-btn {
+  margin-top: 0.4em;
+}
+
+.card-register .card-link-register {
+  margin-bottom: 0.4em;
+}
+
+#light .card-register {
+  color: #2d6a4f;
+}
+
+#dark .card-register {
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+}
+/*# sourceMappingURL=Register.css.map */

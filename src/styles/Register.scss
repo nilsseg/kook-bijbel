@@ -1,0 +1,19 @@
+@import "../variables/Variables.scss";
+
+.card-register {
+  min-height: calc(100vh - (80px + 50px));
+  .card-btn {
+    margin-top: 0.4em;
+  }
+  .card-link-register {
+    margin-bottom: 0.4em;
+  }
+}
+// -------------Themes-------------
+#light .card-register {
+  @include main-colors-light;
+}
+
+#dark .card-register {
+  @include main-colors-dark;
+}

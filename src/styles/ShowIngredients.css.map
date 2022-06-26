@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGG,AAAD,mBAAQ,CAAC;EACP,UAAU,EAAE,MAAM;CACnB;;AAEA,AAAD,qBAAU,CAAC;EACT,UAAU,EAAE,MAAM;CACnB;;AAEA,AAAD,kBAAO,CAAC;EACN,UAAU,EAAE,IAAI;CACjB;;AAEA,AAAD,uBAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,MAAM,EAAE,OAAO;EACf,aAAa,EAAE,GAAG,CAAC,MAAM,CCDV,OAAO;CDEvB",
+    "sources": [
+        "ShowIngredients.scss",
+        "../variables/Variables.scss"
+    ],
+    "names": [],
+    "file": "ShowIngredients.css"
+}

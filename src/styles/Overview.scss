@@ -1,0 +1,29 @@
+@import "../variables/Variables.scss";
+
+.overview {
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  font-weight: 400;
+
+  &__title {
+    margin: 1em 0 0.5em;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10px;
+  }
+}
+
+// -------------Themes-------------
+#light .overview {
+  @include main-colors-light;
+}
+
+#dark .overview {
+  @include main-colors-dark;
+}

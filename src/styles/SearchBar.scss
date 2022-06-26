@@ -1,0 +1,12 @@
+@import "../variables/Variables.scss";
+
+.search {
+  &__inputs {
+    max-width: 17em;
+    margin-bottom: 0.8em;
+  }
+
+  #clearBtn {
+    cursor: pointer;
+  }
+}

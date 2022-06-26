@@ -1,0 +1,21 @@
+.recipeMain {
+  min-height: calc(100vh - (80px + 50px));
+}
+
+.recipeMain__title {
+  margin-top: 1em;
+}
+
+.recipeMain__group-buttons {
+  margin: 0.8em 1.5em;
+}
+
+#light .recipeMain {
+  color: #2d6a4f;
+}
+
+#dark .recipeMain {
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+}
+/*# sourceMappingURL=Recipe.css.map */

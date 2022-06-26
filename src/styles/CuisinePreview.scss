@@ -1,0 +1,25 @@
+@import "../variables/Variables.scss";
+
+$theme-colors: (
+  "primary": $mintGreenColor,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.cuisine-preview-toolbar {
+  .btn-group {
+    margin-top: 0.8em;
+
+    width: 100%;
+  }
+}
+
+.cuisineTitle {
+  margin-top: 1em;
+}
+
+.cuisine-more-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0.8em 0 0.8em 0;
+}

@@ -1,0 +1,22 @@
+@import "../variables/Variables.scss";
+
+.recipeMain {
+  min-height: calc(100vh - (80px + 50px));
+
+  &__title {
+    margin-top: 1em;
+  }
+
+  &__group-buttons {
+    margin: 0.8em 1.5em;
+  }
+}
+
+// -------------Themes-------------
+#light .recipeMain {
+  @include main-colors-light;
+}
+
+#dark .recipeMain {
+  @include main-colors-dark;
+}

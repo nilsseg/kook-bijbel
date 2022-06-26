@@ -1,0 +1,36 @@
+.overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  font-weight: 400;
+}
+
+.overview__title {
+  margin: 1em 0 0.5em;
+}
+
+.overview__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 10px;
+}
+
+#light .overview {
+  color: #2d6a4f;
+}
+
+#dark .overview {
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+}
+/*# sourceMappingURL=Overview.css.map */
