@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import useDocument from "../hooks/useDocument";
-import { doc, deleteDoc } from "firebase/firestore";
+import { doc, deleteDoc, getDoc } from "firebase/firestore";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { db } from "../utils/database";
@@ -17,7 +17,12 @@ import "../styles/Recipe.css";
 function Recipe() {
   const { id } = useParams();
   // data ophalen van 1 document/recept met hook
-  const recipe = useDocument("recipe", id);
+  // const recipe = useDocument("recipe", id);
+
+  // usedocument werkt niet na deployment > zonder useHook
+  const docRef = doc(db, "recipe", id);
+  const docSnap = await getDoc(docRef);
+  const recipe = docSnap.data() || null;
   const data = Array.from(recipe);
   const { currentUser } = useAuth();
   const navigate = useNavigate();
