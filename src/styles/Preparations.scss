@@ -1,0 +1,16 @@
+@import "../variables/Variables.scss";
+
+.form-preparations {
+  .form-label {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+  }
+  .form-preparations-item {
+    margin-bottom: 0.8em;
+  }
+
+  .form-buttons {
+    padding: 0.5em 0.5em;
+  }
+}

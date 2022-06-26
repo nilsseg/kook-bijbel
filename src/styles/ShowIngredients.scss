@@ -1,0 +1,22 @@
+@import "../variables/Variables.scss";
+
+.ingredients {
+  &__title {
+    text-align: center;
+  }
+
+  &__buttons {
+    text-align: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    border-bottom: 1px dotted $darkerGreenColor;
+  }
+}

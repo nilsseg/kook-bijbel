@@ -1,0 +1,44 @@
+.menu__container {
+  height: calc(100vh - (80px + 50px));
+  position: relative;
+  text-align: center;
+}
+
+.menu__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+}
+
+.menu__title-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.menu__title {
+  font-weight: 900;
+  font-size: 4.5em;
+  text-align: center;
+}
+
+.menu__subtitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+#light .menu {
+  color: #52b788;
+}
+
+#dark .menu {
+  background-color: #d8f3dc;
+  color: #40916c;
+}
+/*# sourceMappingURL=Menu.css.map */

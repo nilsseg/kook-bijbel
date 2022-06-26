@@ -1,0 +1,18 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  font-weight: 400;
+}
+
+#light .main {
+  color: #2d6a4f;
+}
+
+#dark .main {
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+}
+/*# sourceMappingURL=Home.css.map */

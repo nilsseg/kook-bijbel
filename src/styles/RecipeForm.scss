@@ -1,0 +1,45 @@
+@import "../variables/Variables.scss";
+
+.recipeForm {
+  min-height: calc(100vh - (80px + 50px));
+
+  &__title {
+    margin-top: 1em;
+  }
+
+  &__group-image {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__group-image-label {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+  }
+
+  &__group-image-container {
+    padding: 0.5em 0 0.5em 0;
+    max-height: 100em;
+  }
+
+  &__group-image-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+  }
+}
+
+// -------------Themes-------------
+#light .recipeForm {
+  @include main-colors-light;
+}
+
+#dark .recipeForm {
+  @include main-colors-dark;
+}

@@ -1,0 +1,88 @@
+@import "../variables/Variables.scss";
+// -------------Bootstrap modifications-------------
+// stijl aangepast over de hele app
+
+$theme-colors: (
+  "primary": $mintGreenColor,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.header {
+  display: flex;
+  height: 80px;
+  font-weight: 700;
+
+  &__container {
+    @include content-container;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: inherit;
+    margin-left: 55px;
+  }
+
+  &__image {
+    margin-top: 0.25em;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0.2em;
+  }
+
+  &__title-item {
+    text-decoration: none;
+  }
+
+  &__navbar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  &__navigation {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 55px;
+  }
+
+  .header-item {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 0.5em;
+  }
+}
+// -------------Themes-------------
+#light .header {
+  @include header-colors-light;
+}
+
+#dark .header {
+  @include header-colors-dark;
+}
+
+#light .header-item {
+  // @include header-colors-light;
+  background-color: $darkerGreenColor;
+  color: $lighterGreenColor;
+}
+
+#dark .header-item {
+  // @include header-colors-dark;
+  background-color: $whiteColor;
+  color: $darkerGreenColor;
+}

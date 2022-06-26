@@ -1,0 +1,75 @@
+// -------------Bootstrap modifications-------------
+// zitten in de header.scss file
+
+// stijl aangepast over de hele app
+// $theme-colors: (
+//   "primary": $mintGreenColor,
+// );
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// -------------Colors-------------
+$lightestGreenColor: #d8f3dc;
+$lighterGreenColor: #b7e4c7;
+$lightGreenColor: #95d5b2;
+
+$mintGreenColor: #74c69d;
+$greenColor: #52b788;
+
+$darkGreenColor: #40916c;
+$darkerGreenColor: #2d6a4f;
+$darkestGreenColor: #1b4332;
+
+$blackColor: #081c15;
+$whiteColor: #f4f4f4;
+
+// -------------Themes-------------
+@mixin header-colors-light {
+  background-color: $lighterGreenColor;
+  color: $darkerGreenColor;
+}
+
+@mixin header-colors-dark {
+  background-color: $darkerGreenColor;
+  color: $whiteColor;
+}
+
+@mixin logo-colors-light {
+  background-color: $darkerGreenColor;
+  color: $darkerGreenColor;
+}
+
+@mixin logo-colors-dark {
+  background-color: $whiteColor;
+  color: $whiteColor;
+}
+
+@mixin main-colors-light {
+  // background-color: $whiteColor;
+  color: $darkerGreenColor;
+}
+
+@mixin main-colors-dark {
+  background-color: $lightestGreenColor;
+  color: $darkerGreenColor;
+}
+
+@mixin textinimage-colors-light {
+  // background-color: $whiteColor;
+  color: $greenColor;
+}
+
+@mixin textinimage-colors-dark {
+  background-color: $lightestGreenColor;
+  color: $darkGreenColor;
+}
+
+// -------------Measurements-------------
+@mixin content-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2000px;
+}
+
+// -------------Fonts-------------
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont: "Times New Roman", Times, serif;

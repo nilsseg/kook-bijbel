@@ -1,0 +1,9 @@
+.search__inputs {
+  max-width: 17em;
+  margin-bottom: 0.8em;
+}
+
+.search #clearBtn {
+  cursor: pointer;
+}
+/*# sourceMappingURL=SearchBar.css.map */

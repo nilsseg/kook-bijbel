@@ -1,0 +1,103 @@
+@import "../variables/Variables.scss";
+
+.footer {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  font-weight: 700;
+  position: relative;
+  bottom: 0;
+
+  &__container {
+    @include content-container;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: inherit;
+    margin-left: 55px;
+    text-transform: uppercase;
+    outline: none;
+    text-align: center;
+  }
+
+  &__logo {
+    padding: 0.3em;
+    border-radius: 25px;
+  }
+
+  &__socials {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 55px;
+    font-size: 0.75em;
+
+    &__socials-title {
+      display: inherit;
+      text-decoration: inherit;
+      text-transform: uppercase;
+      outline: none;
+      padding: 0.75em;
+      text-align: center;
+    }
+  }
+
+  .footer-title {
+    display: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.75em;
+    text-align: center;
+  }
+
+  .footer-item {
+    display: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.75em;
+    text-align: center;
+  }
+  .footer-item:hover {
+    font-size: 1.6em;
+    transition: 0.3s;
+  }
+}
+
+#light .footer {
+  @include header-colors-light;
+}
+
+#dark .footer {
+  @include header-colors-dark;
+}
+
+#light .footer-item {
+  @include header-colors-light;
+}
+
+#dark .footer-item {
+  @include header-colors-dark;
+}
+
+#light .footer__logo {
+  @include logo-colors-light;
+  // background-color: $darkerGreenColor;
+}
+
+#dark .footer__logo {
+  @include logo-colors-dark;
+  // background-color: $whiteColor;
+}

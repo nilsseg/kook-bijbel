@@ -1,0 +1,101 @@
+@import "../variables/Variables.scss";
+
+.carousel {
+  height: 30em;
+}
+
+.carousel-item {
+  height: 30em;
+}
+
+.d-block {
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-caption {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.carouselTitle {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.carouselRecipe {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* responsive rules ------------------------------*/
+@media screen and (min-height: 660px) {
+  .carousel {
+    height: 32em;
+  }
+
+  .carousel-item {
+    height: 32em;
+  }
+}
+
+// @media screen and (min-height: 705px) {
+//   .carousel {
+//     height: 35em;
+//   }
+
+//   .carousel-item {
+//     height: 35em;
+//   }
+// }
+
+// @media screen and (min-height: 750px) {
+//   .carousel {
+//     height: 38em;
+//   }
+
+//   .carousel-item {
+//     height: 38em;
+//   }
+// }
+@media screen and (min-height: 785px) {
+  .carousel {
+    height: 38em;
+  }
+
+  .carousel-item {
+    height: 38em;
+  }
+}
+
+// @media screen and (min-height: 805px) {
+//   .carousel {
+//     height: 40em;
+//   }
+
+//   .carousel-item {
+//     height: 40em;
+//   }
+// }
+// @media screen and (min-height: 825px) {
+//   .carousel {
+//     height: 42em;
+//   }
+
+//   .carousel-item {
+//     height: 42em;
+//   }
+// }
+
+@media screen and (min-height: 880px) {
+  .carousel {
+    height: 42em;
+  }
+
+  .carousel-item {
+    height: 42em;
+  }
+}
