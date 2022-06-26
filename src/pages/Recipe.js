@@ -49,16 +49,16 @@ function Recipe() {
           <Col>
             {/* <Row> */}
             <div className="recipeMain__title">
-              <h2>{data[0]?.nameRecipe}</h2>
+              <h2>{data?.[0]?.nameRecipe}</h2>
             </div>
             <div className="recipeMain__group">
               <ShowDetails
-                cookingTime={data[0]?.cookingTime}
-                mealType={data[0]?.mealType}
-                cuisineType={data[0]?.cuisineType}
-                difficulty={data[0]?.difficulty}
-                cost={data[0]?.cost}
-                allergens={data[0]?.allergens}
+                cookingTime={data?.[0]?.cookingTime}
+                mealType={data?.[0]?.mealType}
+                cuisineType={data?.[0]?.cuisineType}
+                difficulty={data?.[0]?.difficulty}
+                cost={data?.[0]?.cost}
+                allergens={data?.[0]?.allergens}
               />
             </div>
             {currentUser && data[0]?.userId === currentUser.uid && (
