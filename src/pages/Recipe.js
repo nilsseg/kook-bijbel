@@ -14,16 +14,23 @@ import ModalCheck from "../components/ModalCheck";
 import RecipeRating from "../components/RecipeRating";
 import "../styles/Recipe.css";
 
-async function Recipe() {
+// usedocument werkt niet na deployment > zonder useHook
+// export const documentDetail = async () => {
+//   const { id } = useParams();
+//   const docRef = doc(db, "recipe", id);
+//   const docSnap = await getDoc(docRef);
+//   return {
+//     id: id,
+//     recipe: JSON.stringify(docSnap.data()) || null,
+//   };
+// };
+
+function Recipe() {
   const { id } = useParams();
   // data ophalen van 1 document/recept met hook
-  // const recipe = useDocument("recipe", id);
-
-  // usedocument werkt niet na deployment > zonder useHook
-  const docRef = doc(db, "recipe", id);
-  const docSnap = await getDoc(docRef);
-  const recipe = docSnap.data() || null;
+  const recipe = useDocument("recipe", id);
   const data = Array.from(recipe);
+
   const { currentUser } = useAuth();
   const navigate = useNavigate();
   const verwijderObject = { opdracht: "verwijderen", bevestiging: "Verwijder" };
