@@ -14,17 +14,6 @@ import ModalCheck from "../components/ModalCheck";
 import RecipeRating from "../components/RecipeRating";
 import "../styles/Recipe.css";
 
-// usedocument werkt niet na deployment > zonder useHook
-// export const documentDetail = async () => {
-//   const { id } = useParams();
-//   const docRef = doc(db, "recipe", id);
-//   const docSnap = await getDoc(docRef);
-//   return {
-//     id: id,
-//     recipe: JSON.stringify(docSnap.data()) || null,
-//   };
-// };
-
 function Recipe() {
   const { id } = useParams();
   // data ophalen van 1 document/recept met hook
@@ -35,12 +24,6 @@ function Recipe() {
   const navigate = useNavigate();
   const verwijderObject = { opdracht: "verwijderen", bevestiging: "Verwijder" };
   const updateObject = { opdracht: "updaten", bevestiging: "Update" };
-
-  console.log(id);
-  console.log(data);
-  console.log(data?.[0]?.nameRecipe);
-  console.log(recipe);
-  console.log(recipe?.[0]?.nameRecipe);
 
   const handleDelete = async (id) => {
     const docRef = doc(db, "recipe", id);
@@ -67,17 +50,16 @@ function Recipe() {
           <Col>
             {/* <Row> */}
             <div className="recipeMain__title">
-              <h2>{data?.[0]?.nameRecipe}</h2>
-              <h2>{recipe[0]?.nameRecipe}</h2>
+              <h2>{data[0]?.nameRecipe}</h2>
             </div>
             <div className="recipeMain__group">
               <ShowDetails
-                cookingTime={data?.[0]?.cookingTime}
-                mealType={data?.[0]?.mealType}
-                cuisineType={data?.[0]?.cuisineType}
-                difficulty={data?.[0]?.difficulty}
-                cost={data?.[0]?.cost}
-                allergens={data?.[0]?.allergens}
+                cookingTime={data[0]?.cookingTime}
+                mealType={data[0]?.mealType}
+                cuisineType={data[0]?.cuisineType}
+                difficulty={data[0]?.difficulty}
+                cost={data[0]?.cost}
+                allergens={data[0]?.allergens}
               />
             </div>
             {currentUser && data[0]?.userId === currentUser.uid && (

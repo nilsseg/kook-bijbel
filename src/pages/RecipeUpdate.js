@@ -18,8 +18,6 @@ function RecipeUpdate() {
   console.log(location.state.recipeId, location.state?.data);
   console.log(location.state?.data[0].cost);
   const { recipeId, data } = location.state;
-  console.log(data);
-  console.log(recipeId);
 
   const [form, setForm] = useState({
     // comment: "",
@@ -44,8 +42,6 @@ function RecipeUpdate() {
       [name]: value,
     });
   };
-  console.log(form);
-  console.log(form.difficulty);
   const [newImage, setNewImage] = useState(data[0]?.image);
 
   const uploadImage = async (e) => {

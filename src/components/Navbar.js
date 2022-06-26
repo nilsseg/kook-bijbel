@@ -13,9 +13,7 @@ import {
 
 function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log(theme);
   const { currentUser, logout } = useAuth();
-  console.log(currentUser);
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
