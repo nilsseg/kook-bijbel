@@ -24,6 +24,11 @@ function Recipe() {
   const verwijderObject = { opdracht: "verwijderen", bevestiging: "Verwijder" };
   const updateObject = { opdracht: "updaten", bevestiging: "Update" };
 
+  console.log(data);
+  console.log(data?.[0]?.nameRecipe);
+  console.log(recipe);
+  console.log(recipe?.[0]?.nameRecipe);
+
   const handleDelete = async (id) => {
     const docRef = doc(db, "recipe", id);
     try {
@@ -50,6 +55,7 @@ function Recipe() {
             {/* <Row> */}
             <div className="recipeMain__title">
               <h2>{data?.[0]?.nameRecipe}</h2>
+              <h2>{recipe[0]?.nameRecipe}</h2>
             </div>
             <div className="recipeMain__group">
               <ShowDetails
