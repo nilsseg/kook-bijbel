@@ -13,10 +13,9 @@ const useDocument = (c, id) => {
       results.push({ ...docSnap.data() });
       setData(results);
     };
-    return () => getData();
+    getData();
   }, [id]);
-  // moet eruit om data te kunnen ophalen na deployment
-  // if (!data) return null;
+  if (!data) return null;
   return data;
 };
 
