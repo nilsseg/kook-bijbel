@@ -12,7 +12,9 @@ function RecipeCarousel({ recipes }) {
       {recipes.map((recipe, i) => (
         <Carousel.Item key={recipe.id}>
           <img
-            className="d-block w-100"
+            // className="d-block w-100"
+            className="carouselImage"
+            style={{ display: "block", width: "100%" }}
             src={recipe.image}
             alt={recipe.nameRecipe}
           />
@@ -27,7 +29,9 @@ function RecipeCarousel({ recipes }) {
 
               <p className="carouselRecipe">{recipe.nameRecipe}</p>
 
-              <p>Klik en bekijk het {recipe.mealType} recept</p>
+              <p className="carouselText">
+                Klik en bekijk het {recipe.mealType} recept
+              </p>
             </Carousel.Caption>
           </Link>
         </Carousel.Item>

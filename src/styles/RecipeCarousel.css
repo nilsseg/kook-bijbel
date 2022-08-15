@@ -1,12 +1,13 @@
 .carousel {
   height: 30em;
+  background-color: #74c69d;
 }
 
 .carousel-item {
   height: 30em;
 }
 
-.d-block {
+.carouselImage {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -18,17 +19,24 @@
 }
 
 .carouselTitle {
-  color: white;
+  color: #f4f4f4;
+  text-shadow: black 0px 0px 2px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8em;
 }
 
 .carouselRecipe {
-  color: white;
+  color: #f4f4f4;
+  text-shadow: black 0px 0px 2px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+}
+
+.carouselText {
+  color: #f4f4f4;
+  text-shadow: black 0px 0px 2px;
 }
 
 /* responsive rules ------------------------------*/
