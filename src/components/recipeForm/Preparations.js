@@ -12,8 +12,17 @@ const Preparations = ({ preparations, updateForm }) => {
     updateForm(e.target.name, preparationClone);
   };
 
-  const handlePreparationCount = () => {
-    updateForm("preparations", [...preparations, { id: uuidv4(), text: "" }]);
+  // const handlePreparationCount = () => {
+  //   updateForm("preparations", [...preparations, { id: uuidv4(), text: "" }]);
+  // };
+
+  const handlePreparationCount = (i) => {
+    const preparationClone = [...preparations];
+    preparationClone.splice(i + 1, 0, {
+      id: uuidv4(),
+      text: "",
+    });
+    updateForm("preparations", preparationClone);
   };
 
   const removePreparation = (i) => {
@@ -42,7 +51,11 @@ const Preparations = ({ preparations, updateForm }) => {
                   <div className="form-buttons">
                     <Row>
                       <Col>
-                        <Button type="button" onClick={handlePreparationCount}>
+                        {/* <Button type="button" onClick={handlePreparationCount}> */}
+                        <Button
+                          type="button"
+                          onClick={() => handlePreparationCount(i)}
+                        >
                           {/* Voeg een volgende stap toe */}
                           <FontAwesomeIcon icon={faCirclePlus} />
                         </Button>

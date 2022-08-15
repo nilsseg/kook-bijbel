@@ -27,18 +27,31 @@ const Ingredients = ({ ingredients, updateForm }) => {
     updateForm(e.target.name, unitClone);
   };
 
-  const handleIngredientCount = () => {
-    updateForm("ingredients", [
-      ...ingredients,
-      {
-        id: uuidv4(),
-        text: {
-          ingredient: "",
-          amount: "",
-          unit: "",
-        },
+  // const handleIngredientCount = () => {
+  //   updateForm("ingredients", [
+  //     ...ingredients,
+  //     {
+  //       id: uuidv4(),
+  //       text: {
+  //         ingredient: "",
+  //         amount: "",
+  //         unit: "",
+  //       },
+  //     },
+  //   ]);
+  // };
+
+  const handleIngredientCount = (i) => {
+    const ingredientsClone = [...ingredients];
+    ingredientsClone.splice(i + 1, 0, {
+      id: uuidv4(),
+      text: {
+        ingredient: "",
+        amount: "",
+        unit: "",
       },
-    ]);
+    });
+    updateForm("ingredients", ingredientsClone);
   };
 
   const removeIngredient = (i) => {
@@ -110,7 +123,11 @@ const Ingredients = ({ ingredients, updateForm }) => {
                   <div className="form-buttons">
                     <Row>
                       <Col>
-                        <Button type="button" onClick={handleIngredientCount}>
+                        {/* <Button type="button" onClick={handleIngredientCount}> */}
+                        <Button
+                          type="button"
+                          onClick={() => handleIngredientCount(i)}
+                        >
                           {/* Voeg een volgend ingrediënt toe */}
                           <FontAwesomeIcon icon={faCirclePlus} />
                         </Button>
